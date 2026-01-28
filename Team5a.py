@@ -14,31 +14,38 @@ for i in range(2):
     t.forward(150)
     t.left(90)
 
+def chop():
+    t.penup()
+    t.goto(-125, -125)
+    t.pendown()
+    t.right(180)
+    def c():
+        for i in range(18):
+            t.forward(9)
+            t.right(10)
+        t.forward(10)
+    c()
+    def h():
+        t.penup()
+        t.forward(30)
+        t.pendown()
+        t.right(90)
+        t.forward(100)
+        t.right(180)
+        t.forward(50)
+        t.right(90)
+        t.forward(50)
+        t.left(90)
+        t.forward(50)
+        t.right(180)
+        t.forward(100)
+    h()
 
-t.right(180)
-for i in range(18):
-    t.forward(10)
-    t.right(10)
-t.forward(10)
-t.penup()
-t.forward(50)
-t.pendown()
-t.right(90)
-t.forward(100)
-t.right(180)
-t.forward(50)
-t.right(90)
-t.forward(50)
-t.left(90)
-t.forward(50)
-t.right(180)
-t.forward(100)
-
-t.penup()
-t.right(90)
-t.forward(50)
-t.pendown()
-t.circle(50)
+    t.penup()
+    t.left(90)
+    t.forward(80)
+    t.pendown()
+    t.circle(50)
 
 
 def draw_circle(t, radius):
@@ -62,6 +69,6 @@ def draw_knife(t, angle=0):
     t.circle(-280, 22)
     t.end_fill()
 
-
+chop()
 draw_knife(turtle.Turtle(), 30)
 turtle.done()
