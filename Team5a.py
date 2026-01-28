@@ -51,19 +51,26 @@ def chop():
 def draw_circle(t, radius):
     t.circle(radius)
 
-
-def draw_knife(t, angle=0):
+def draw_knife(t, angle=0,start_pos=(0,0)):
+    t.pensize(1)
     t.penup()
-    t.goto(180,120)
-    t.pendown()
-    t.setheading(angle)
-    t.penup()
-    t.backward(180)
+    t.goto(start_pos)
     t.pendown()
     t.begin_fill()
+    
+    t.setheading(angle)
+    #draw straight part of blade
     t.forward(100)
     t.right(90)
-    t.forward(20)
+    t.forward(5)
+    t.left(90)
+    t.forward(30)
+    t.right(90)
+    t.forward(10)
+    t.right(90)
+    t.forward(30)
+    t.left(90)
+    t.forward(5)
     # Draw curved part of blade
     t.right(90)
     t.circle(-280, 22)
