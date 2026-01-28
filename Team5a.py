@@ -3,6 +3,21 @@ import turtle
 
 
 t = turtle.Turtle()
+
+turtle.Screen().bgcolor("orange")
+
+t.speed(53268)
+t.pensize(10)
+t.color("Black")
+for i in range(2):
+    t.forward(200)
+    t.left(90)
+    t.forward(150)
+    t.left(90)
+t.penup()
+t.goto(180,120)
+t.pendown()
+
 t.right(180)
 for i in range(20):
     t.forward(10)
