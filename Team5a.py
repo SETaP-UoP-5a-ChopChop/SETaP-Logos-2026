@@ -1,19 +1,33 @@
 import turtle
 
 
-
 t = turtle.Turtle()
 t.right(180)
-for i in range(20):
+for i in range(18):
     t.forward(10)
     t.right(10)
-t.penup()
 t.forward(10)
-t.right(90)
-t.forward(30)
+t.penup()
+t.forward(50)
 t.pendown()
+t.right(90)
+t.forward(100)
+t.right(180)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.right(180)
+t.forward(100)
 
+t.penup()
+t.right(90)
+t.forward(50)
+t.pendown()
 t.circle(50)
+
+
 def draw_circle(t, radius):
     t.circle(radius)
 
