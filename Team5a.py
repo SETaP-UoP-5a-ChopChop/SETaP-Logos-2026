@@ -51,7 +51,7 @@ def chop():
 def draw_circle(t, radius):
     t.circle(radius)
 
-def draw_knife(t, angle=0,start_pos=(0,0)):
+def draw_knife(t, angle=0,start_pos=(50,50)):
     t.pensize(1)
     t.penup()
     t.goto(start_pos)
@@ -75,6 +75,8 @@ def draw_knife(t, angle=0,start_pos=(0,0)):
     t.right(90)
     t.circle(-280, 22)
     t.end_fill()
+    t.penup()
+    t.ht()
 
 chop()
 draw_knife(turtle.Turtle(), 30)
