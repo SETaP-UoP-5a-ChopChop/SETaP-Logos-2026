@@ -41,11 +41,13 @@ def chop():
         t.forward(100)
     h()
 
-    t.penup()
-    t.left(90)
-    t.forward(80)
-    t.pendown()
-    t.circle(50)
+    def o():
+        t.penup()
+        t.left(90)
+        t.forward(80)
+        t.pendown()
+        t.circle(50)
+    o()
 
 
 def draw_circle(t, radius):
