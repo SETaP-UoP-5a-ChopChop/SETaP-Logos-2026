@@ -6,7 +6,7 @@ t = turtle.Turtle()
 
 turtle.Screen().bgcolor("orange")
 
-t.speed(53268)
+t.speed(150)
 t.pensize(10)
 t.color("Black")
 for i in range(2):
